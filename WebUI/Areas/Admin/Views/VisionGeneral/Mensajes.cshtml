@@ -1,0 +1,60 @@
+﻿@using WebUI.Entities
+@model WebUI.Areas.Admin.Models.VisionGeneralViewModel
+
+@{
+    ViewBag.Title = "Mensajes";
+}
+
+@section Styles {
+    <link rel="stylesheet" href=@Url.Content("~/Areas/Admin/Content/vistaTablaMensaje.css") type="text/css">
+    <link rel="stylesheet" href=@Url.Content("~/Areas/Admin/Content/vistaEliminar.css") type="text/css">
+}
+<div class="container">
+    <section class="caja">
+        <h3 class="col-md-11"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Todas los mensajes</h3>
+        <table class="table">
+            <tr>
+                <th class="col-md-2">
+                    Producto Reportado
+                </th>
+                <th class="col-md-2">
+                    Email
+                </th>
+                <th class="col-md-2">
+                    Asunto
+                </th>
+                <th class="col-md-5">
+                    Mensaje
+                </th>
+                <th>
+                </th>
+            </tr>
+
+            @foreach (Reporte unReporte in Model.Reportes)
+            {
+                <tr>
+                    <td>
+                        <a href="javascript:Admin.showModalEmpresa('@Url.Action("DetalleProducto", "VisionGeneral", new { id = unReporte.Producto.Id })');">
+                            @unReporte.Producto.Nombre
+                        </a>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => unReporte.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => unReporte.Asunto)
+                    </td>
+                    <td>
+                       @Html.DisplayFor(modelItem => unReporte.Mensaje)
+                    </td>
+                    <td>
+                        <a href="javascript:Admin.showModalEmpresa('@Url.Action("ModalEliminarMensaje","VisionGeneral", new { id = unReporte.Id })');" style="color:#ea052e;">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        </a>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </section>
+</div>

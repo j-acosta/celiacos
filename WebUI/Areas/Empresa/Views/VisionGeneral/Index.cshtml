@@ -1,0 +1,89 @@
+﻿@model IEnumerable<WebUI.Entities.Producto>
+@{
+    ViewBag.Title = "Index";
+}
+
+@section Styles {
+    <link rel="stylesheet" href=@Url.Content("~/Areas/Empresa/Content/vistaGeneral.css") type="text/css">
+    <link rel="stylesheet" href=@Url.Content("~/Areas/Admin/Content/vistaEliminar.css") type="text/css">
+}
+
+
+<div class="jumbotron">
+    <img src="@Url.Content("~/img/logo1.png")" class="imgDentroJumbotron" />
+</div>
+<div class="container">
+    <div class="row caja">
+        <section class="col-md-8">
+            <div class="row">
+                <br class="clearfix" />
+                <br />
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-inline col-xs-8 col-sm-8 col-md-9">
+                        <div class="form-group col-xs-5 col-md-5">
+                            @Html.DropDownList("categoriaId", new SelectList(ViewBag.Categorias, "Id", "Nombre"), "Todas las categorias", new { @class = "form-control" })
+                        </div>
+                        <button type="submit" class="btn btn-default"> Filtrar</button>
+                    </div>
+                }
+                <div class="col-xs-4 col-sm-4 col-md-3">
+                    @Html.ActionLink("Nuevo Producto", "Index", "Producto", null, new { @class = "btn btn-default", style = "margin-left: 3em;" })
+                </div>
+                <br class="clearfix" />
+                <hr />
+                @if (Model.Count() > 0)
+                {
+                    foreach (var unProducto in Model)
+                    {
+                        <div class="col-xs-6 col-sm-6 col-md-3 cajaTamaño">
+                            @Html.Partial("_Producto", unProducto)
+                        </div>
+                    }
+                }
+                else
+                {
+                    @Html.Partial("_GrillaVacia")
+                }
+            </div>
+            <br />
+        </section>
+        <aside class=" col-md-offset-1 col-md-3">
+            <div>
+                <h3>DATOS IMPORTANTES!</h3>
+                <p>
+                    1.- Actualmente no existe una venta masiva de productos aptos, limitándose a las grandes ciudades y alrededores,
+                    lo cual dificulta su acceso y consumo en diferentes puntos del país.
+                </p>
+
+                <p>
+                    2.- En la Argentina la celiaquía afecta al 1% de la población. Teniendo en cuenta las estadísticas, alrededor de
+                    400.000 argentinos y sus respectivas familias son potenciales consumidores de productos libres de gluten.
+                </p>
+
+                <p>
+                    3.- El primer criterio de selección de un celíaco a la hora de viajar, es conocer si el destino elegido ofrece
+                    opciones aptas, por lo que una enorme cantidad de turistas nacionales y extranjeros demandan la existencia de
+                    alimentos aptos en nuestro país.
+                </p>
+
+                <p>
+                    4.- Existen además personas con otras intolerancias alimenticias que ven el consumo de alimentos libres de
+                    gluten como una opción saludable.
+                </p>
+
+                <p>
+                    5.- Elaborar y comercializar productos aptos para celíacos genera un compromiso con la comunidad y puede ser
+                    parte de un programa de RSE (Responsabilidad Social Empresaria), lo que potenciará la imagen de la empresa e
+                    incrementará la influencia de la misma en la sociedad.
+                </p>
+            </div>
+        </aside>
+    </div>
+    <br />
+</div>
+
+@section Scripts {
+    <script src="@Url.Content("~/Scripts/admin.js")" type="text/javascript"></script>
+}

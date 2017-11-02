@@ -1,0 +1,11 @@
+﻿@model WebUI.Entities.Reporte
+
+<div class="modal-dialog" role="document">
+    <div class="modal-content cajaModal">
+        <div class="modal-body">
+            <h4>¿ Esta seguro de eliminar este mensaje ?</h4>
+            @Html.ActionLink("SI", "EliminarMensaje", "VisionGeneral", new { id = Model.Id, Area = "Admin" }, new { @style = "font-family: initial;" })
+            <a href="#" data-dismiss="modal" style="font-family: initial;">NO</a>
+        </div>
+    </div>
+</div>

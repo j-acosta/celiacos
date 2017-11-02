@@ -1,0 +1,77 @@
+﻿@using WebUI.Entities
+@model WebUI.Areas.Admin.Models.VisionGeneralViewModel
+@{
+    ViewBag.Title = "Empresas";
+}
+@section Styles {
+    <link rel="stylesheet" href=@Url.Content("~/Areas/Admin/Content/vistaTablaEmpresa.css") type="text/css">
+    <link rel="stylesheet" href=@Url.Content("~/Areas/Admin/Content/vistaEliminar.css") type="text/css">
+}
+
+<div class="container">
+    <div class="row">
+        <section class="caja">
+            <h3 class="col-md-11"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Todas las empresas</h3>
+            <table class="table">
+                <tr>
+                    <th class="col-md-2">
+                        Nombre
+                    </th>
+                    <th class="col-md-2" >
+                        Descripcion
+                    </th>
+                    <th class="col-md-1">
+                        Productos
+                    </th>
+                    <th class="col-md-1">
+                        Email
+                    </th>
+                    <th class="col-md-2">
+                        Ubicacion
+                    </th>
+                    <th class="col-md-2">
+                        Hora de Atencion
+                    </th>
+                    <th class="col-md-1">
+                        Certificacion SIN TACC
+                    </th>
+                    <th>
+                    </th>
+                </tr>
+
+                @foreach (Usuario unUsuario in Model.Usuarios)
+            {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => @unUsuario.Nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => unUsuario.Descripcion)
+                        </td>
+                        <td>
+                            @Html.ActionLink(" Lista Productos", "ListaProducto", "VisionGeneral", new { id = unUsuario.Id },null)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => unUsuario.Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => unUsuario.Ubicacion)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => unUsuario.HoraAtencion)
+                        </td>
+                        <td>
+                            <a href="@Url.Content( @Html.DisplayFor(modelItem => unUsuario.CertificadoDeSINTACC).ToString() )" target="_blank" style="text-decoration: underline;"> certificacion.jpg</a>
+                        </td>
+                        <td>
+                            <a href="javascript:Admin.showModalEmpresa('@Url.Action("ModalEliminar","VisionGeneral", new { id = unUsuario.Id })');" style="color:#ea052e;">
+                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </a>
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </section>
+    </div>
+</div>

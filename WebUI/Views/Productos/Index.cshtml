@@ -1,0 +1,59 @@
+﻿@model IEnumerable<WebUI.Entities.Producto>
+@{
+    ViewBag.Title = "Productos";
+    Layout = "~/Views/Shared/_LayoutIndex.cshtml";
+}
+@section Styles {
+    <link rel="stylesheet" href=@Url.Content("~/Content/vistaProductos.css") type="text/css">
+}
+
+<div class="jumbotron">
+    <img src="@Url.Content("~/img/rutaGastronomica.png")" class="imgDentroJumbotron" />
+</div>
+<div class="container">
+    
+    <div class="row caja">
+        <section class="col-md-9">
+            <div class="row">
+                <h3 id="VistaProductos"> PRODUCTOS/MENUES</h3>
+                <hr />
+                @if (Model.Count() > 0)
+                {
+                    foreach (var unProducto in Model)
+                    {
+                        <div class="col-xs-6 col-sm-6 col-md-3 cajaTamaño">
+                            @Html.Partial("_Producto", unProducto)
+                        </div>
+                    }
+                }
+                else
+                {
+                    @Html.Partial("_GrillaVacia")
+                }
+            </div>
+        </section>
+        <aside class="col-md-offset-1 col-md-2">
+            <table class="table">
+                <tr>
+                    <th>
+                        CATEGORIAS
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        @Html.ActionLink("Todos los productos", "Filtrar", "Productos", new { categoriaId = "" }, null)
+                    </th>
+                </tr>
+                @foreach (var Categoriaa in (IEnumerable<WebUI.Entities.CategoriaProducto>)ViewBag.Categorias)
+                {
+                    <tr>
+                        <th>
+                            @Html.ActionLink(Categoriaa.Nombre, "Filtrar", "Productos", new { categoriaId = Categoriaa.Id },null )
+                        </th>
+                    </tr>
+                }
+            </table>
+            <img src="@Url.Content("~/Img/logo.png")" style="width: 8em;margin-left: 1em;"/>
+        </aside>
+    </div>
+</div>

@@ -1,0 +1,149 @@
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\ApplicationInsights.config
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\csc.exe
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\csc.exe.config
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\csc.rsp
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\csi.exe
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\csi.rsp
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\System.AppContext.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\System.Collections.Immutable.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\System.IO.FileSystem.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\vbc.exe
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\vbc.exe.config
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\vbc.rsp
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\VBCSCompiler.exe
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\roslyn\VBCSCompiler.exe.config
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\WebUI.dll.config
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\WebUI.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\WebUI.pdb
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Antlr3.Runtime.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Microsoft.AI.Web.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Microsoft.AI.WindowsServer.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Microsoft.ApplicationInsights.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Microsoft.Web.Infrastructure.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Newtonsoft.Json.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\System.Web.Helpers.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\System.Web.Mvc.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\System.Web.Optimization.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\System.Web.Razor.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\System.Web.WebPages.Deployment.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\System.Web.WebPages.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\System.Web.WebPages.Razor.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\WebGrease.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\System.Web.Helpers.xml
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\System.Web.Mvc.xml
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\System.Web.Optimization.xml
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\System.Web.Razor.xml
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\System.Web.WebPages.xml
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\System.Web.WebPages.Deployment.xml
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\System.Web.WebPages.Razor.xml
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Antlr3.Runtime.pdb
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Newtonsoft.Json.xml
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Microsoft.ApplicationInsights.xml
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Microsoft.AI.WindowsServer.xml
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\Microsoft.AI.Web.xml
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\es\System.Web.Helpers.resources.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\es\System.Web.Mvc.resources.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\es\System.Web.Optimization.resources.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\es\System.Web.Razor.resources.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\es\System.Web.WebPages.resources.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\es\System.Web.WebPages.Deployment.resources.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\bin\es\System.Web.WebPages.Razor.resources.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\obj\Debug\WebUI.dll
+c:\users\javier\documents\visual studio 2017\Projects\ComITIndividual\WebUI\obj\Debug\WebUI.pdb
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\ApplicationInsights.config
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\csc.exe
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\csc.exe.config
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\csc.rsp
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\csi.exe
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\csi.rsp
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\System.AppContext.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\vbc.exe
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\vbc.exe.config
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\vbc.rsp
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\WebUI.dll.config
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\WebUI.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\WebUI.pdb
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Antlr3.Runtime.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Microsoft.AI.Web.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Newtonsoft.Json.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\System.Web.Helpers.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\System.Web.Mvc.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\System.Web.Optimization.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\System.Web.Razor.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\System.Web.WebPages.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\WebGrease.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\System.Web.Helpers.xml
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\System.Web.Mvc.xml
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\System.Web.Optimization.xml
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\System.Web.Razor.xml
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\System.Web.WebPages.xml
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Antlr3.Runtime.pdb
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Newtonsoft.Json.xml
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\Microsoft.AI.Web.xml
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\es\System.Web.Razor.resources.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\obj\Debug\WebUI.csproj.CoreCompileInputs.cache
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\obj\Debug\WebUI.dll
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\obj\Debug\WebUI.pdb
+C:\Users\Javier\Desktop\ComITIndividual\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache

@@ -1,0 +1,68 @@
+﻿
+@model WebUI.Areas.Admin.Models.ListaDeProductosViewModel
+
+@{
+    ViewBag.Title = "ListaProducto";
+}
+
+@section Styles {
+    <link rel="stylesheet" href=@Url.Content("~/Areas/Admin/Content/vistaTablaMensaje.css") type="text/css">
+}
+
+<div class="container">
+    <div class="row">
+        <section class="caja">
+            <p class="col-md-11">@Html.ActionLink("Inicio", "Index", "VisionGeneral", null, new { @style = "color:black;" })/@Html.ActionLink("Empresas", "Empresas", "VisionGeneral", null, new { @style = "color:black;" })/@Html.ActionLink("Lista de Produtos", "ListaProductos", "VisionGeneral", null, new { @style = "color:black;" })</p>
+            <p>@Html.ActionLink("Volver", "Empresas", "VisionGeneral", null, new { @style = "color:black;" })</p>
+            
+            @if (Model.Productos.Count() < 1)
+            {
+                <div style="text-align: center;">
+                    <p>La empresa <strong>@Model.Usuarios.Nombre</strong>  no posee Producto.</p>
+                    <p>Puede que sea nueva en la aplicación o haya eliminado todos sus productos.</p>
+                </div>
+            }
+            else
+            {
+                <h3 class="col-md-11"><span class="glyphicon glyphicon-folder-open" aria-hidden="true" style="margin-right: 9px;"></span> Lista de Productos de Empresa: @Model.Usuarios.Nombre</h3>
+                <table class="table">
+                    <tr>
+                        <th>
+                            Nombre
+                        </th>
+                        <th>
+                            Descripcion
+                        </th>
+                        <th>
+                            Categoria
+                        </th>
+                        <th>
+                            Logo SIN TACC
+                        </th>
+                    </tr>
+                    @foreach (var unProducto in Model.Productos)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(model => unProducto.Nombre)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(model => unProducto.Descripcion)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(model => unProducto.Categoria.Nombre)
+                            </td>
+
+                            <td>
+                                <a href="@Url.Content( @Html.DisplayFor(model => unProducto.LogoSINTACC).ToString() )" target="_blank" style="text-decoration: underline;"> certificacion.jpg</a>
+                            </td>
+                        </tr>
+                    }
+                </table>
+            }
+        </section>
+    </div>
+</div>
+

@@ -1,0 +1,18 @@
+﻿
+.cajaModal {
+    background: #b90909;
+    color: white;
+    text-align: center;
+    margin-top: 14em;
+}
+
+.cajaModal > div > a {
+     margin: 1em;
+     font-size: 20px;
+     color: white;
+}
+
+.cajaModal > div > a:hover {
+    color: black;
+
+}

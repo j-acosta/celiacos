@@ -1,0 +1,77 @@
+﻿@model WebUI.Entities.Usuario
+
+
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Info Detalle</h4>
+        </div>
+        <div class="modal-body">
+            <img src="@Url.Content(@Model.Foto)" alt="fotoPerfil" class="img-thumbnail" id="fotoPerfil">
+            <h2 class="perfil">EMPRESA</h2>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Nombre)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Descripcion)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Descripcion)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Ubicacion)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Ubicacion)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Password)
+                </dt>
+
+                <dd>
+                    **********
+                </dd>
+
+                <dt>
+                    Hora de Atencion
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.HoraAtencion)
+                </dd>
+
+                <dt>
+                    Certificado SIN TACC
+                </dt>
+
+                <dd>
+                    <a href="@Url.Content( @Html.DisplayFor(model => model.CertificadoDeSINTACC).ToString() )" target="_blank" style="text-decoration: underline;"> certificadoEmpresa.jpg</a>
+                </dd>
+
+            </dl>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+    </div>
+</div>

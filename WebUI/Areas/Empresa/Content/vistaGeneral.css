@@ -1,0 +1,137 @@
+﻿.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(../../../Img/jumbotronEmpresa.jpg);
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 17em;
+    text-shadow: black 0.1em 0.1em 0.3em;
+    padding-top: 70px;
+    box-shadow: 1px 1px 11px black;
+}
+
+.imgDentroJumbotron {
+    vertical-align: middle;
+    float: right;
+    margin-right: 3em;
+    margin-top: 0em;
+}
+
+aside {
+    box-shadow: 1px 1px 11px black;
+    background: #f9eaae;
+    margin-top: 2em;
+    color: black;
+}
+
+.navbar, .navbar-default {
+    background-color: #171616;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.thumbnail > a > img {
+    height: 170px;
+    width: 100%;
+    border-radius: 3px;
+    display: block;
+    background-color: white;
+    text-align: center;
+}
+
+h5 {
+    color:#333333;
+    text-transform: uppercase;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    text-align:center;
+}
+
+.caja {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.cajaTamaño {
+    margin-bottom: 3em;
+}
+
+.thumbnail {
+    box-shadow: 1px 1px 11px #c3c3c3;
+    background: #ffffff;
+}
+
+hr {
+    margin-top: 3em;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #d4cdcd;
+}
+
+table {
+    margin-top: 2.4em;
+}
+
+a {
+    color: #595a5a;
+    text-decoration: none;
+}
+
+    a:hover, a:focus {
+        color: #101010;
+    }
+
+.btn-default {
+    color: #333333;
+    background-color: #e0e0e0;
+    border-color: #cccccc;
+    box-shadow: 1px 1px 1px black;
+}
+
+.btn-danger {
+    color: #ffffff;
+    background-color: #d06360;
+    border-color: #d43f3a;
+    box-shadow: 1px 1px 1px black;
+}
+
+    .btn-danger:hover {
+        background-color: #da4d49;
+        border-color: #ac2925;
+    }
+
+.list-group {
+    padding-left: 0;
+    margin-bottom: 20px;
+    margin-top: 5em;
+}
+
+h4 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/*----------------vista del model de producto---------------*/
+.modal-body {
+    position: relative;
+    padding: 20px;
+    text-align:center;
+}
+
+    .modal-body > h4 {
+        margin-top: 15px;
+        margin-bottom: 6px;
+    }
+
+    .modal-header {
+        text-align:center;
+    }
+
+.modal-footer {
+    text-align: center;
+}

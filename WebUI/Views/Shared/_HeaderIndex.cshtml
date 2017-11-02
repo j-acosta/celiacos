@@ -1,0 +1,47 @@
+﻿<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"> Celiaco, No Extraterrestre!</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("Productos", "Index", "Productos")</li>
+                    <li>@Html.ActionLink("Iniciar Sesion", "Login", "Home")</li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Registrarse</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div  class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Registración</h4>
+                </div>
+                <div class="modal-body">
+                    <p>La finalidad de la registración está dirigida a las empresas, para que puedan exponer sus productos, como también menú de platos de comida para los casos de restaurantes.</p>
+                    <p>Los cuales deben poseer el certificado de autentificación de SIN TACC. Ya sea el logo en los producto, o la habilitación para menús de celiacos en los restaurantes</p>
+
+                </div>
+                <div class="modal-footer">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><h4>@Html.ActionLink("Continuar", "Registracion", "Home")</h4></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

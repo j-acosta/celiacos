@@ -1,0 +1,12 @@
+﻿@model WebUI.Entities.Usuario
+
+<div class="modal-dialog" role="document">
+    <div class="modal-content cajaModal">
+        <div class="modal-body">
+            <h4>¿ Esta seguro de eliminar la empresa @Model.Nombre ?</h4>
+            <p> Se borraran todos sus datos, como los productos cargados por la misma.</p>
+            @Html.ActionLink("SI","Eliminar","VisionGeneral", new { id = Model.Id , Area = "Admin" }, new { @style = "font-family: initial;" })
+            <a href="#" data-dismiss="modal" style="font-family: initial;">NO</a>
+        </div>
+    </div>
+</div>

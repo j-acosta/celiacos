@@ -1,0 +1,70 @@
+﻿body {
+    background: url(../../../Img/background-0005.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.caja {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 6em;
+    margin-bottom: 30px;
+    padding: 2em;
+    box-shadow: 1px 1px 11px black;
+}
+
+.perfil {
+    margin-top: 4.3em;
+    margin-left: 3em;
+}
+
+#fotoPerfil {
+    float: right;
+    height: 160px;
+    margin-right: 2em;
+    width: 225px;
+}
+
+dd {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+    .caja > div > .navbar-right {
+        margin-top: -27px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 12px;
+    }
+
+p {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+}
+
+/*Estilos del HEADER NAV*/
+
+.navbar, .navbar-default {
+    background-color: black;
+    border: black;
+    border-radius: 0;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+}
+
+body > footer {
+    position: absolute;
+    bottom: 0;
+    color: #797979;
+    padding: 0px 0;
+    border: black;
+    background: #d6d6d6;
+}

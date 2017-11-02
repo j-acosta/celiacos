@@ -1,0 +1,35 @@
+﻿@model WebUI.Entities.Producto
+
+
+<div class="thumbnail">
+    @if (Session[WebUI.Utilities.Strings.KeyCurrentUser] == null)
+    {
+        <img src="@Url.Content(@Model.Foto)" alt="imagenPruducto">
+        <div class="caption">
+            <hr style="margin-top: 4px;margin-bottom: 4px;" />
+            <p>
+                <h4 style="text-align:center;text-transform: uppercase; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;">
+                    <a href="javascript:Admin.showModalEmpresa('@Url.Action("DetalleProducto", "Productos", new { id = Model.Id })');">
+                        @Html.DisplayFor(modelItem => Model.Nombre)
+                    </a>
+                </h4>
+            </p>
+            <p style="overflow:hidden; white-space:nowrap; text-overflow:ellipsis;text-align:center;">@Html.DisplayFor(modelItem => Model.Descripcion)</p>
+        </div>
+
+    }
+    else
+    {
+        <a href="javascript:Admin.showModalEmpresa('@Url.Action("DetalleProducto", "VisionGeneral", new { id = Model.Id })');" style="text-transform: uppercase; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;">
+            <img src="@Url.Content(@Model.Foto)" alt="imagenPruducto">
+        </a>
+        <div class="caption">
+            <hr style="margin-top: 4px;margin-bottom: 4px;" />
+                <h5>
+                    <a href="javascript:Admin.showModalEmpresa('@Url.Action("ModalEliminarProducto", "Producto", new { id = Model.Id , area="Empresa"})');">
+                        Eliminar
+                    </a>
+                </h5>
+        </div>
+    }
+</div>

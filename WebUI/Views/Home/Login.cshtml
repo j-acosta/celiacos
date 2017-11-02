@@ -1,0 +1,65 @@
+﻿@model WebUI.Models.LogInViewModel
+
+@{
+    ViewBag.Title = "Login";
+}
+@section Styles {
+    <link rel="stylesheet" href=@Url.Content("~/Content/registracion.css") type="text/css">
+    <link rel="stylesheet" href=@Url.Content("~/Content/login.css") type="text/css">
+}
+
+<div class="container">
+    <div id="containerLogin" class="col-md-offset-4 col-md-4 ">
+        <div class="col-md-offset-2 col-md-10"><p>@Html.ValidationMessage("CustomError", new { @class = "text-danger" })</p></div>
+        @using (Html.BeginForm())
+            {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.TextBoxFor(m => m.Email, new { placeholder = "Email", @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+
+            </div>
+            <div class="form-group">
+                @Html.PasswordFor(m => m.Password, new { placeholder = "Contraseña", @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+            </div>
+            <p>
+                <a href="javascript:Login.mostrarRestaurarCuenta();" class="pull-right">¿Ha olvidado su contraseña?</a>
+            </p>
+        }
+    </div>
+    <div class="sidebar-module col-md-offset-4 col-md-4 " id="containerResetear" style="display:none;">
+        <h4>Ingrese su E-mail</h4>
+        @using (Html.BeginForm("Resetear", "Home", FormMethod.Post, new { @class = "form-signin", role = "form" }))
+            {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.TextBox("Email", "", new { @class = "form-control", @placeholder = "Email", required = "required", type = "email" })
+                @Html.ValidationMessage("Email", "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Restaurar</button>
+            </div>
+            <p>
+                <a href="javascript:Login.mostrarLogin();" class="pull-right">Cancelar</a>
+            </p>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/app")
+    <script src="@Url.Content("~/Scripts/login.js")" type="text/javascript"></script>
+
+    <script>
+        $(document).ready(function () {
+            Login.init();
+        });
+    </script>
+}

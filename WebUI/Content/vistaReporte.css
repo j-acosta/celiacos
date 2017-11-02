@@ -1,0 +1,46 @@
+﻿
+.navbar, .navbar-default {
+    background-color: #171616;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+}
+
+section {
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+
+aside {
+    margin-top: 9em;
+}
+
+body > footer {
+    width: 100%;
+    padding: 5px 0;
+    color: #7d7d7d;
+    background-color: #eed3d7;
+    border-top: 1px solid #e5e5e5;
+    border: black;
+}
+
+    body > footer > .row > div > ul {
+        list-style-type: none;
+        margin-top: 1em;
+    }
+
+        body > footer > .row > div > ul > li {
+            margin-left: -3em;
+        }
+
+            body > footer > .row > div > ul > li > a {
+                color: #7d7d7d;
+                margin-left: 3em;
+            }
+
+                body > footer > .row > div > ul > li > a:hover {
+                    color: #565656;
+                }

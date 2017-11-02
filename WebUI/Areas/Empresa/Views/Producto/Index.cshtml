@@ -1,0 +1,72 @@
+﻿@model WebUI.Areas.Empresa.Models.ProductoViewModel
+
+@{
+    ViewBag.Title = "NuevoProducto";
+}
+
+@section Styles {
+    <link rel="stylesheet" href=@Url.Content("~/Areas/Empresa/Content/editarProducto.css") type="text/css">
+}
+
+<div class="container">
+    <section  class="col-md-offset-2 col-md-8 caja">
+        <p class="col-md-11">@Html.ActionLink("Inicio", "Index", "VisionGeneral", null, new { @style = "color:black;" })/@Html.ActionLink("NuevoProducto", "Index", "Producto", null, new { @style = "color:black;" })</p>
+        <p>@Html.ActionLink("Volver", "Index", "VisionGeneral", null, new { @style = "color:black;" })</p>
+        <hr style="margin-top: 1em;" />
+        <h2 class="col-md-offset-4" >Nuevo producto</h2>
+        <hr />
+
+        @using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Nombre, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Descripcion, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-8">
+                        @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control", @style = "resize: none;" } })
+                        @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.CategoriaId, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-8">
+                        @Html.DropDownListFor(model => model.CategoriaId, Model.Categorias, "Seleccione..", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.CategoriaId, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Foto, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(model => model.Foto, new { type = "file", htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Foto, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-group">
+                    @Html.LabelFor(model => model.LogoSINTACC, htmlAttributes: new { @class = "control-label col-md-3" })
+                    <div class="col-md-8">
+                        @Html.TextBoxFor(model => model.LogoSINTACC, new { type = "file", htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.LogoSINTACC, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <br />
+                <div class="form-group">
+                    <div class="col-md-offset-3 col-md-9">
+                        <input type="submit" value="Dar de alta" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+        }
+
+    </section>
+</div>

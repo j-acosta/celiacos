@@ -1,0 +1,76 @@
+﻿@using WebUI.Entities
+@model WebUI.Models.VistaCompletaProductoViewModel
+
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header" style="text-align:center;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">PRODUCTO EN DETALLE</h4>
+        </div>
+        <div class="modal-body" style="text-align:center;">
+            <img src="@Url.Content(@Model.Foto)" alt="..." style="height: 250px;">
+            <br />
+            <h4>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </h4>
+
+            <p>
+                @Html.DisplayFor(model => model.Nombre)
+            </p>
+
+            <h4>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </h4>
+
+            <p>
+                @Html.DisplayFor(model => model.Descripcion)
+            </p>
+            <h4>
+                Empresa
+            </h4>
+            <p>
+                @Html.DisplayFor(model => model.NombreEmpresa)
+            </p>
+            <h4>
+                Descripcion Empresa
+            </h4>
+            <p>
+                @Html.DisplayFor(model => model.DescripcionEmpresa)
+            </p>
+            <h4>
+                Ubicacion
+            </h4>
+            <p>
+                @Html.DisplayFor(model => model.Ubicacion)
+            </p>
+            <h4>
+                Hora de atencion
+            </h4>
+            <p>
+                @Html.DisplayFor(model => model.HoraAtencion)
+            </p>
+            <h4>
+                Certificacion de producto
+            </h4>
+
+            <p>
+                <a href="@Url.Content( @Html.DisplayFor(model => model.LogoSINTACC).ToString() )" target="_blank" style="text-decoration: underline;"> certificacionProducto.jpg</a>
+            </p>
+            <h4>
+                Certificacion de empresa
+            </h4>
+
+            <p>
+                <a href="@Url.Content( @Html.DisplayFor(model => model.CertificadoDeSINTACC).ToString() )" target="_blank" style="text-decoration: underline;"> certificacionEmpresa.jpg</a>
+            </p>
+
+        </div>
+        @if (Session[WebUI.Utilities.Strings.KeyCurrentUser] == null)
+            {
+            <div class="modal-footer">
+                @Html.ActionLink("Reportar Producto", "ReportarProducto", "Productos", new { id = Model.Id }, new { @class = "btn btn-danger", role = "button", @style = "box-shadow: 1px 1px 1px black;" });
+            </div>
+        }
+
+    </div>
+</div>

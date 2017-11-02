@@ -1,0 +1,51 @@
+﻿body {
+    background: url("../../../Img/background-0005.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.caja {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 6em;
+    margin-bottom: 30px;
+    padding: 1em;
+    box-shadow: 1px 1px 11px black;
+}
+
+
+.navbar, .navbar-default {
+    background-color: black;
+    border: black;
+    border-radius: 0;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+}
+
+@media screen and (min-width: 768px){
+    .modal-dialog {
+        right: auto;
+        left: 50%;
+        width: 760px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+} 
+
+section {
+    margin-top: 6em;
+    margin-bottom: 4em;
+}
+
+
+body > footer {
+    color: #797979;
+    padding: 1px 0;
+    border: black;
+    background: #d6d6d6;
+    margin-top: 9px;
+}
+

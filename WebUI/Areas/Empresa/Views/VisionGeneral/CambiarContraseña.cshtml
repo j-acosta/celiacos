@@ -1,0 +1,62 @@
+﻿@model WebUI.Areas.Empresa.Models.CambiarContraseñaViewModel
+
+@{
+    ViewBag.Title = "CambiarContraseña";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="@Url.Content("~/Areas/Empresa/Content/perfil.css")">
+}
+<div class="container">
+    <section class="caja col-md-offset-3 col-md-6">
+        <p class="col-md-10">@Html.ActionLink("Inicio", "Index", "VisionGeneral", null, new { @style = "color:black;" })/@Html.ActionLink("Perfil", "MostrarPerfil", "VisionGeneral", null, new { @style = "color:black;" })/@Html.ActionLink("Cambiar Contraseña", "CambiarContraseña", "VisionGeneral", null, new { @style = "color:black;" })</p>
+        <p>@Html.ActionLink("Volver", "MostrarPerfil", "VisionGeneral", null, new { @style = "color:black;" })</p>
+        <hr style="margin-top: 1em;" />
+        
+        <h2 style="text-align:center;">CAMBIAR CONTRASEÑA</h2>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <hr />
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.PasswordNueva, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.PasswordNueva, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.PasswordNueva, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.PasswordConfirmacion, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.PasswordConfirmacion, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.PasswordConfirmacion, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Guardar cambios" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+        }
+
+    </section>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

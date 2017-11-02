@@ -1,0 +1,24 @@
+﻿
+.navbar, .navbar-default {
+    background-color: #171616;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+}
+
+.caja {
+    background-color: cornsilk;
+    border-radius: 5px;
+    margin-top: 6em;
+    margin-bottom: 30px;
+    padding: 3em;
+    box-shadow: 1px 1px 11px black;
+}
+
+section {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}

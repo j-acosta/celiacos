@@ -1,0 +1,11 @@
+﻿@model WebUI.Entities.Producto
+
+<div class="modal-dialog" role="document">
+    <div class="modal-content cajaModal">
+        <div class="modal-body">
+            <h4>¿ Esta seguro de eliminar el producto @Model.Nombre ?</h4>
+            @Html.ActionLink("SI", "Eliminar", "Producto", new { id = Model.Id, Area = "Empresa" }, new { @style = "font-family: initial;" })
+            <a href="" style="font-family: initial;">NO</a>
+        </div>
+    </div>
+</div>
